@@ -1,0 +1,16 @@
+Installed Python packages in myenv_system environment:
+Date: Fr 27 Sep 2024 14:45:13 CEST
+----------------------------------------
+contourpy
+cycler
+fonttools
+kiwisolver
+matplotlib
+numpy
+packaging
+pillow
+pip
+pygame
+pyparsing
+python-dateutil
+six
