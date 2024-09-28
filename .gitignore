@@ -1,5 +1,6 @@
 # macOS
 .DS_Store
+*~
 
 # Python
 __pycache__/
@@ -20,6 +21,7 @@ venv/
 
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
+.virtual_documents/
 
 # LaTeX
 *.aux
@@ -31,7 +33,5 @@ venv/
 .vscode/
 .idea/
 
-# Skripte und temporäre Dateien
-*.sh
-*.lua
+
 
