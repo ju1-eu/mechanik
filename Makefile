@@ -2,7 +2,7 @@
 
 # Pfade
 DOCS_DIR=docs
-CSS_FILE=docs/markdown_styles.css
+CSS_FILE=$(DOCS_DIR)/markdown_styles.css
 TEMPLATE_FILE=template.html
 CODE_DIR=code
 SCRIPTS_DIR=scripts

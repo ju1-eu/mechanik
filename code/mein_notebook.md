@@ -8,8 +8,6 @@ Zur **Modularisierung** wurden SQLAlchemy-Modelle definiert und die Funktionen l
 
 Die **Benutzerinteraktion** in Pygame wurde erweitert, sodass das Programm nun auf Benutzeraktionen wie das Schließen des Fensters reagiert. Schließlich wurde ein **Logging-System** eingerichtet, das wichtige Informationen, Warnungen und Fehler protokolliert, um die Debugging-Fähigkeiten zu verbessern.
 
-Diese Änderungen verbessern die Struktur, Benutzerfreundlichkeit und Wartbarkeit des Codes erheblich und gewährleisten eine robuste und effiziente Ausführung der verschiedenen Demonstrationen.
-
 
 ```python
 import numpy as np
@@ -286,13 +284,13 @@ sqlalchemy_example()
 
     Genauigkeit des Modells: 1.00
     PyTorch Tensor:
-    tensor([[ 1.4140, -0.0207,  0.7808],
-            [ 1.0213,  1.7339, -1.0242],
-            [ 0.8304,  0.2059, -0.6043],
-            [ 0.9852,  0.9855,  0.1719],
-            [ 0.9389,  1.4565,  0.8149]])
-    Summe: tensor(9.6900)
-    Mittelwert: tensor(0.6460)
+    tensor([[ 0.8768,  1.6091, -1.2619],
+            [-1.2175,  0.4161, -0.0572],
+            [-1.2709, -0.6149,  1.0070],
+            [ 1.6220,  0.2057,  0.1930],
+            [-0.1122, -0.9012,  0.6234]])
+    Summe: tensor(1.1173)
+    Mittelwert: tensor(0.0745)
 
 
     INFO: Neuer Benutzer hinzugefügt.
@@ -301,7 +299,7 @@ sqlalchemy_example()
     Pygame: Das Fenster wurde geschlossen.
     GitHub API Status: 200
     Headers:
-    Date: Sat, 28 Sep 2024 19:04:43 GMT
+    Date: Sat, 28 Sep 2024 21:15:02 GMT
     Content-Type: application/json; charset=utf-8
     Cache-Control: public, max-age=60, s-maxage=60
     Vary: Accept,Accept-Encoding, Accept, X-Requested-With
@@ -320,12 +318,12 @@ sqlalchemy_example()
     Server: github.com
     X-RateLimit-Limit: 60
     X-RateLimit-Remaining: 59
-    X-RateLimit-Reset: 1727553885
+    X-RateLimit-Reset: 1727561718
     X-RateLimit-Resource: core
     X-RateLimit-Used: 1
     Accept-Ranges: bytes
     Content-Length: 510
-    X-GitHub-Request-Id: 6450:17D617:715F5DD:72F8696:66F8534D
+    X-GitHub-Request-Id: 9AF0:3DC24D:1328D58:136FC58:66F871E6
     User ID: 1, Name: John Doe
 
 

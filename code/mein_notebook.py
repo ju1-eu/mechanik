@@ -10,8 +10,6 @@
 # Zur **Modularisierung** wurden SQLAlchemy-Modelle definiert und die Funktionen logisch getrennt, um die Wiederverwendbarkeit zu fördern. Außerdem wurden **Performance-Optimierungen** bei der Visualisierung großer Datenmengen in der `pandas_seaborn_example`-Funktion vorgenommen, um die Effizienz zu verbessern.
 # 
 # Die **Benutzerinteraktion** in Pygame wurde erweitert, sodass das Programm nun auf Benutzeraktionen wie das Schließen des Fensters reagiert. Schließlich wurde ein **Logging-System** eingerichtet, das wichtige Informationen, Warnungen und Fehler protokolliert, um die Debugging-Fähigkeiten zu verbessern.
-# 
-# Diese Änderungen verbessern die Struktur, Benutzerfreundlichkeit und Wartbarkeit des Codes erheblich und gewährleisten eine robuste und effiziente Ausführung der verschiedenen Demonstrationen.
 
 # In[1]:
 

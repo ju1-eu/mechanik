@@ -16,8 +16,8 @@ dependencies:
   - scipy
   - sqlalchemy
   - pytorch
-  - nodejs # Hinzugefügt für die JupyterLab-Features
-  - python-lsp-server # Hinzugefügt für Sprachserverunterstützung
+  - nodejs
+  - python-lsp-server
   - pip
   - pip:
       - requests
