@@ -1,0 +1,24 @@
+name: jupyter_fresh
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - numpy
+  - pandas
+  - seaborn
+  - matplotlib
+  - scikit-learn
+  - ipywidgets
+  - scipy
+  - sqlalchemy
+  - pytorch
+  - nodejs # Hinzugefügt für die JupyterLab-Features
+  - python-lsp-server # Hinzugefügt für Sprachserverunterstützung
+  - pip
+  - pip:
+      - requests
+      - django

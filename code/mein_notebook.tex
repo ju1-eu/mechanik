@@ -1,0 +1,102 @@
+% Dokumentenklasse und Seitenformat
+\documentclass[a4paper,BCOR=12mm]{scrartcl}  % BCOR für Bindungskorrektur hinzugefügt
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+% Schriftarten und Typografie
+\usepackage{fontspec}  % Ermöglicht die Verwendung von TrueType/OpenType-Schriftarten mit XeLaTeX
+\usepackage[T1]{fontenc} % Korrekte Darstellung von Umlauten und Sonderzeichen
+\usepackage{textcomp}   % Zusätzliche Schriftzeichen wie Euro-Symbol
+\usepackage{microtype}  % Optimiert die Mikrotypografie für bessere Lesbarkeit
+
+% Hauptschriftart einstellen (Tex Gyre Termes, aber anpassbar)
+\setmainfont[
+    Path = /Users/jan/Library/Fonts/,  % Pfad zu den Schriftarten
+    BoldFont = texgyretermes-bold.otf,
+    ItalicFont = texgyretermes-italic.otf,
+    BoldItalicFont = texgyretermes-bolditalic.otf
+]{texgyretermes-regular.otf}
+
+% Monospaced-Schriftart für Quellcode oder ähnliches
+\setmonofont{Source Code Pro}
+
+% Mathematische Schriftarten und Pakete
+\usepackage{unicode-math} % Verwendung moderner Mathematik-Schriften (kompatibel mit XeLaTeX)
+\setmathfont{STIX Two Math} % Mathematische Schriftart einstellen
+
+% Mathematische Erweiterungen
+\usepackage{amsmath}  % Erweiterungen für mathematische Formeln
+\usepackage{siunitx}  % Für das Setzen von SI-Einheiten und Zahlenformaten
+\sisetup{per-mode=symbol}  % Optional: Ändert die Schreibweise von Einheiten
+\sisetup{locale = DE}
+\DeclareSIUnit{\litre}{l}
+\DeclareSIUnit{\PS}{PS}
+
+% Sprache und Lokalisierung (Deutsch)
+\usepackage[ngerman]{babel}   % Deutsche Sprachunterstützung
+\usepackage{csquotes}         % Kontext-sensitive Anführungszeichen (wichtig für Deutsch und Zitate)
+
+% Weitere Pakete für das Dokument
+\usepackage{pifont}
+\usepackage{esvect}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{mindmap, shapes, backgrounds}
+
+% Tabellen und Listen
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+% Literaturverzeichnis
+\usepackage[backend=biber, style=ieee]{biblatex}
+\addbibresource{references.bib}
+
+% Farben und Quellcode-Listings
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily, columns=fullflexible}
+
+% Hyperlinks und Querverweise
+\usepackage[hidelinks]{hyperref}
+\usepackage[ngerman]{cleveref}
+
+% Kopf- und Fußzeilen
+\usepackage[automark]{scrlayer-scrpage}
+\clearpairofpagestyles
+\ihead[]{\headmark}
+\ofoot*[\pagemark]{\pagemark}
+\automark[section]{section}
+
+% Benutzerdefinierte Befehle
+\newcommand{\R}{\mathbb{R}}
+
+% Dokumenteninformationen
+\title{Titel des Dokuments}
+\author{Autor }
+\date{Stand: \today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    
+    Zusammenfassung hier.
+    
+\end{abstract}
+
+\tableofcontents
+
+% Hauptinhalt des Dokuments
+
+    {{ body }}
+
+
+% Literaturverzeichnis
+\printbibliography
+
+\end{document}
