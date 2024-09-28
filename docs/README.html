@@ -125,15 +125,19 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="
 Pygame mit AVX2-Unterstützung</h2>
 <ol type="1">
 <li><p>SDL-Entwicklerbibliotheken installieren:</p>
-<pre><code>brew install sdl2 sdl2_image sdl2_mixer sdl2_ttf portmidi</code></pre></li>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install sdl2 sdl2_image sdl2_mixer sdl2_ttf portmidi</span></code></pre></div></li>
 <li><p>Umgebungsvariablen für SDL-Pfade setzen:</p>
-<pre><code>export LDFLAGS=&quot;-L/usr/local/opt/sdl2/lib&quot;
-export CPPFLAGS=&quot;-I/usr/local/opt/sdl2/include&quot;</code></pre></li>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">LDFLAGS</span><span class="op">=</span><span class="st">&quot;-L/usr/local/opt/sdl2/lib&quot;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">CPPFLAGS</span><span class="op">=</span><span class="st">&quot;-I/usr/local/opt/sdl2/include&quot;</span></span></code></pre></div></li>
 <li><p>AVX2-Erkennung aktivieren:</p>
-<pre><code>export PYGAME_DETECT_AVX2=1</code></pre></li>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PYGAME_DETECT_AVX2</span><span class="op">=</span>1</span></code></pre></div></li>
 <li><p>Pygame neu installieren:</p>
-<pre><code>pip install --upgrade pip
-pip install --no-binary :all: pygame</code></pre></li>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--upgrade</span> pip</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--no-binary</span> :all: pygame</span></code></pre></div></li>
 </ol>
 <h2 id="nutzung">Nutzung</h2>
 <div class="sourceCode" id="cb8"><pre
@@ -176,9 +180,22 @@ Zusammenarbeit.</li>
 Kanban-Stil.</li>
 </ul>
 <h2 id="integration-von-cicd-mit-github-actions">Integration von CI/CD
-mit GitHub Actions**</h2>
-<p>Implementiere Continuous Integration (CI) und Continuous Deployment
-(CD), um automatische Tests und Deployments durchzuführen.</p>
+mit GitHub Actions</h2>
+<p>Continuous Integration (CI) und Continuous Deployment (CD) sind
+essenzielle Praktiken in der modernen Softwareentwicklung. Sie
+ermöglichen es Teams, Code schneller und zuverlässiger zu entwickeln, zu
+testen und bereitzustellen. GitHub Actions bietet eine leistungsstarke
+und flexible Möglichkeit, CI/CD-Pipelines direkt in GitHub-Repositories
+zu implementieren.</p>
+<h3 id="vorteile-von-cicd">Vorteile von CI/CD</h3>
+<ul>
+<li>Frühzeitige Fehlererkennung</li>
+<li>Verbesserte Codequalität</li>
+<li>Schnellere Bereitstellung von Updates</li>
+<li>Erhöhte Entwicklerproduktivität</li>
+</ul>
+<p>Implementiere CI/CD mit GitHub Actions, um automatische Tests und
+Deployments durchzuführen.</p>
 <p><strong>Beispiel
 <code>.github/workflows/python-app.yml</code>:</strong></p>
 <div class="sourceCode" id="cb9"><pre
@@ -201,7 +218,7 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb9-1"><a href="
 <span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> conda-incubator/setup-miniconda@v2</span></span>
 <span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">with</span><span class="kw">:</span></span>
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">environment-file</span><span class="kw">:</span><span class="at"> environment.yml</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">activate-environment</span><span class="kw">:</span><span class="at"> meinenv</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">activate-environment</span><span class="kw">:</span><span class="at"> jupyter_fresh</span></span>
 <span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">python-version</span><span class="kw">:</span><span class="at"> </span><span class="fl">3.12</span></span>
 <span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install pip dependencies</span></span>
 <span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="fu">      run</span><span class="kw">: </span><span class="ch">|</span></span>
@@ -209,9 +226,41 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb9-1"><a href="
 <span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run tests</span></span>
 <span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="fu">      run</span><span class="kw">: </span><span class="ch">|</span></span>
 <span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>        pytest</span></code></pre></div>
+<h3 id="erläuterung-der-workflow-schritte">Erläuterung der
+Workflow-Schritte</h3>
+<ol type="1">
+<li><strong>Trigger</strong>: Der Workflow wird bei Pushes und Pull
+Requests auf den main-Branch ausgelöst.</li>
+<li><strong>Runner</strong>: Der Job läuft auf einem macOS-System.</li>
+<li><strong>Checkout</strong>: Der Repository-Code wird
+ausgecheckt.</li>
+<li><strong>Conda Setup</strong>: Conda wird mit einer spezifischen
+Umgebung und Python-Version eingerichtet.</li>
+<li><strong>Dependency Installation</strong>: Pip-Abhängigkeiten werden
+installiert.</li>
+<li><strong>Tests</strong>: Pytest wird ausgeführt, um die Tests
+durchzuführen.</li>
+</ol>
+<h3 id="anpassungsmöglichkeiten">Anpassungsmöglichkeiten</h3>
+<ul>
+<li>Für Node.js-Projekte: Ersetze Conda-Setup und pip durch
+Node.js-Setup und npm/yarn.</li>
+<li>Für Deployment: Füge einen Schritt hinzu, der den Code auf einen
+Server oder Cloud-Dienst deployed.</li>
+</ul>
+<h3 id="sicherheitshinweis">Sicherheitshinweis</h3>
+<p>Bei der Verwendung von GitHub Actions ist es wichtig, sensible Daten
+wie API-Schlüssel oder Zugangsdaten als GitHub Secrets zu speichern.
+Diese können dann sicher in Ihren Workflows verwendet werden, ohne sie
+im Code preiszugeben.</p>
 <p><strong>Hinweis:</strong> Stelle sicher, dass du eine
 <code>requirements.txt</code>-Datei hast, wenn du zusätzliche
-<code>pip</code>-Pakete verwendest.</p></div>
+<code>pip</code>-Pakete verwendest.</p>
+<p>Weitere Ressourcen: - <a
+href="https://docs.github.com/en/actions">GitHub Actions
+Dokumentation</a> - <a
+href="https://github.com/marketplace?type=actions">GitHub Actions
+Marketplace</a></p></div>
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         if (typeof Prism !== 'undefined') Prism.highlightAll();
