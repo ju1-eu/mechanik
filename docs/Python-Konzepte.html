@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Python-Konzepte</title>
+    <link rel="stylesheet" href="markdown_styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-markdown.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container" style="max-width: 75rem"><h1
+id="python-und-verwandte-technologien">Python und verwandte
+Technologien</h1>
+<h2 id="python">Python</h2>
+<p><strong>Erklärung:</strong> Python ist eine vielseitige,
+interpretierte Programmiersprache. Sie ist bekannt für ihre einfache
+Lesbarkeit und breite Anwendbarkeit in verschiedenen Bereichen wie
+Webentwicklung, Datenanalyse und maschinelles Lernen.</p>
+<p><strong>Beispiel:</strong> <code>print("Hello, World!")</code></p>
+<p><strong>Analogie:</strong> Python ist wie ein Schweizer Taschenmesser
+für Programmierer – vielseitig einsetzbar und leicht zu handhaben.</p>
+<h2 id="jupyter">Jupyter</h2>
+<p><strong>Erklärung:</strong> Jupyter ist eine Open-Source-Anwendung,
+die interaktives Computing über verschiedene Programmiersprachen
+ermöglicht. Es erlaubt das Erstellen und Teilen von Dokumenten, die
+Live-Code, Gleichungen, Visualisierungen und erklärenden Text
+enthalten.</p>
+<p><strong>Beispiel:</strong> Ein Jupyter Notebook, das Python-Code,
+Markdown-Text und Diagramme kombiniert.</p>
+<p><strong>Analogie:</strong> Jupyter ist wie ein digitales Laborbuch,
+in dem Sie Ihre Experimente, Notizen und Ergebnisse an einem Ort
+zusammenführen können.</p>
+<h2 id="jupyterlab">JupyterLab</h2>
+<p><strong>Erklärung:</strong> JupyterLab ist die nächste Generation der
+Jupyter Notebook-Oberfläche. Es bietet eine flexiblere, integrierte
+Entwicklungsumgebung für Datenarbeit, Wissenschaft und Bildung.</p>
+<p><strong>Beispiel:</strong> Mehrere Notebooks, Terminals und
+Datei-Browser nebeneinander in einer Weboberfläche.</p>
+<p><strong>Analogie:</strong> JupyterLab ist wie ein modernes Büro mit
+flexiblen Arbeitsbereichen, wo Sie alle Ihre Werkzeuge nach Belieben
+anordnen können.</p>
+<h2 id="ipykernel">ipykernel</h2>
+<p><strong>Erklärung:</strong> ipykernel ist der IPython-Kernel für
+Jupyter. Es ermöglicht die Ausführung von Python-Code in
+Jupyter-Notebooks und anderen interaktiven Umgebungen.</p>
+<p><strong>Beispiel:</strong> Die Ausführung von Python-Code-Zellen in
+einem Jupyter Notebook.</p>
+<p><strong>Analogie:</strong> ipykernel ist wie ein Übersetzer zwischen
+Ihrem Python-Code und der Jupyter-Umgebung.</p>
+<h2 id="numpy">NumPy</h2>
+<p><strong>Erklärung:</strong> NumPy ist eine fundamentale Bibliothek
+für wissenschaftliches Rechnen in Python. Sie bietet Unterstützung für
+große, mehrdimensionale Arrays und Matrizen sowie eine Vielzahl
+mathematischer Funktionen.</p>
+<p><strong>Beispiel:</strong>
+<code>import numpy as np; arr = np.array([1, 2, 3, 4, 5])</code></p>
+<p><strong>Analogie:</strong> NumPy ist wie ein hochleistungsfähiger
+Taschenrechner für Programmierer, der komplexe mathematische Operationen
+schnell und effizient durchführen kann.</p>
+<h2 id="pandas">pandas</h2>
+<p><strong>Erklärung:</strong> pandas ist eine leistungsstarke
+Datenanalyse- und -manipulationsbibliothek für Python. Sie bietet
+Datenstrukturen wie DataFrames, die eine effiziente Verarbeitung
+strukturierter Daten ermöglichen.</p>
+<p><strong>Beispiel:</strong>
+<code>import pandas as pd; df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})</code></p>
+<p><strong>Analogie:</strong> pandas ist wie ein digitaler Assistent für
+Datenwissenschaftler, der große Mengen von Daten organisiert, sortiert
+und analysiert.</p>
+<h2 id="seaborn">seaborn</h2>
+<p><strong>Erklärung:</strong> seaborn ist eine
+Datenvisualisierungsbibliothek, die auf matplotlib aufbaut. Sie bietet
+eine High-Level-Schnittstelle zur Erstellung attraktiver und
+informativer statistischer Grafiken.</p>
+<p><strong>Beispiel:</strong>
+<code>import seaborn as sns; sns.scatterplot(x='A', y='B', data=df)</code></p>
+<p><strong>Analogie:</strong> seaborn ist wie ein Künstler, der Ihre
+Daten in ästhetisch ansprechende und leicht verständliche visuelle
+Darstellungen verwandelt.</p>
+<h2 id="matplotlib">matplotlib</h2>
+<p><strong>Erklärung:</strong> matplotlib ist eine umfassende Bibliothek
+zur Erstellung statischer, animierter und interaktiver Visualisierungen
+in Python. Sie bietet eine MATLAB-ähnliche Schnittstelle für die
+Ploterstellung.</p>
+<p><strong>Beispiel:</strong>
+<code>import matplotlib.pyplot as plt; plt.plot([1, 2, 3, 4])</code></p>
+<p><strong>Analogie:</strong> matplotlib ist wie ein digitaler
+Zeichenblock, auf dem Sie Ihre Daten in verschiedensten grafischen
+Formen darstellen können.</p>
+<h2 id="scikit-learn">scikit-learn</h2>
+<p><strong>Erklärung:</strong> scikit-learn ist eine Machine
+Learning-Bibliothek für Python. Sie bietet einfach zu benutzende und
+effiziente Tools für Datenanalyse und -modellierung, einschließlich
+verschiedener Algorithmen für Klassifikation, Regression und
+Clustering.</p>
+<p><strong>Beispiel:</strong>
+<code>from sklearn.model_selection import train_test_split</code></p>
+<p><strong>Analogie:</strong> scikit-learn ist wie ein Werkzeugkasten
+für Datenwissenschaftler, gefüllt mit verschiedenen Instrumenten zur
+Analyse und Vorhersage von Datenmustern.</p>
+<h2 id="ipywidgets">ipywidgets</h2>
+<p><strong>Erklärung:</strong> ipywidgets ist eine Bibliothek zur
+Erstellung interaktiver Widgets in Jupyter Notebooks. Sie ermöglicht die
+Erstellung von benutzerfreundlichen Schnittstellen für Datenexploration
+und -visualisierung.</p>
+<p><strong>Beispiel:</strong>
+<code>from ipywidgets import interact; interact(lambda x: x**2, x=(-10, 10))</code></p>
+<p><strong>Analogie:</strong> ipywidgets ist wie ein Satz von
+Lego-Steinen, mit denen Sie interaktive Bedienelemente für Ihre
+Datenanalysen bauen können.</p>
+<h2 id="scipy">SciPy</h2>
+<p><strong>Erklärung:</strong> SciPy ist eine Bibliothek für
+wissenschaftliche und technische Berechnungen in Python. Sie erweitert
+die Funktionalität von NumPy und bietet zusätzliche Module für
+Optimierung, lineare Algebra, Integration und Statistik.</p>
+<p><strong>Beispiel:</strong>
+<code>from scipy import optimize; result = optimize.minimize(lambda x: x**2, x0=2)</code></p>
+<p><strong>Analogie:</strong> SciPy ist wie eine fortgeschrittene
+wissenschaftliche Taschenrechnerbibliothek, die komplexe mathematische
+und wissenschaftliche Berechnungen durchführen kann.</p>
+<h2 id="sqlalchemy">SQLAlchemy</h2>
+<p><strong>Erklärung:</strong> SQLAlchemy ist ein SQL-Toolkit und
+Object-Relational Mapping (ORM) System für Python. Es ermöglicht
+Entwicklern, mit Datenbanken auf eine pythonische Art und Weise zu
+interagieren.</p>
+<p><strong>Beispiel:</strong>
+<code>from sqlalchemy import create_engine; engine = create_engine('sqlite:///example.db')</code></p>
+<p><strong>Analogie:</strong> SQLAlchemy ist wie ein Dolmetscher
+zwischen Ihrer Python-Anwendung und der Datenbanksprache SQL.</p>
+<h2 id="pytorch">PyTorch</h2>
+<p><strong>Erklärung:</strong> PyTorch ist ein Open-Source Machine
+Learning Framework. Es bietet Tensor-Berechnungen mit starker
+GPU-Beschleunigung und wird häufig für Deep Learning und künstliche
+neuronale Netze verwendet.</p>
+<p><strong>Beispiel:</strong>
+<code>import torch; x = torch.tensor([1, 2, 3])</code></p>
+<p><strong>Analogie:</strong> PyTorch ist wie ein hochleistungsfähiger
+Baukasten für künstliche Intelligenz, mit dem Sie komplexe neuronale
+Netzwerke konstruieren und trainieren können.</p>
+<h2 id="node.js">Node.js</h2>
+<p><strong>Erklärung:</strong> Node.js ist eine
+JavaScript-Laufzeitumgebung, die es ermöglicht, JavaScript-Code
+außerhalb eines Webbrowsers auszuführen. Es wird häufig für
+serverseitige Anwendungen und Tooling verwendet.</p>
+<p><strong>Beispiel:</strong> ```javascript const http =
+require(‘http’); http.createServer((req, res) =&gt; res.end(‘Hello
+World!’)).listen(8080);</p></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        if (typeof Prism !== 'undefined') Prism.highlightAll();
+        if (typeof MathJax !== 'undefined') MathJax.typeset();
+      });
+    </script>
+  </body>
+</html>
