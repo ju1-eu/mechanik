@@ -1,3 +1,5 @@
+# Copyright (c) 2024 Jan Unger
+# Lizenziert unter der MIT-Lizenz. Siehe LICENSE-Datei im Projektverzeichnis für vollständigen Lizenztext.
 import random
 import time
 from typing import List, Tuple
